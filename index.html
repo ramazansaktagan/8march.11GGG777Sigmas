@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Приглашение на 8 марта</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#ff4d88;
+}
+
+h4{
+    color:#ff4d88;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>🌸 С 8 Марта! 🌸</h1>
+<h4>"Который еще не наступил"</h6>
+<p>Дорогие одноклассницы!</p>
+<p>Приглашаем вас на небольшое празднование в честь 8 марта!</p>
+
+<p><b>Дата:</b> 6 марта<br>
+<b>Место:</b> Шарашкина контора #220</p>
+
+<button onclick="showMessage()">Нажми сюда</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("msg").innerHTML =
+"Будем очень рады вас видеть 💐";
+}
+</script>
+
+</body>
+</html>
