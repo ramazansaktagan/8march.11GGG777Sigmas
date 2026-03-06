@@ -40,6 +40,27 @@ button{
     border-radius:10px;
     cursor:pointer;
     font-size:16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e63973;
+}
+
+/* Стили для ссылки на песню */
+a.song-link {
+    color: #ff4d88;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.song-link:hover {
+    text-decoration: underline;
+}
+
+#msg {
+    margin-top: 20px;
+    line-height: 1.6;
 }
 </style>
 </head>
@@ -48,29 +69,28 @@ button{
 
 <div class="card">
 <h1>🌸 С 8 Марта! 🌸</h1>
-<h4>"Который еще не наступил"</h6>
+<h4>"Который еще не наступил"</h4>
 <p>Құрметті 11Г қыздаритостар!</p>
 <p>Сіздерды Халыкаралык Кыздар Күніне шакырамыз!</p>
 
 <p><b>Дата:</b> 6 марта, время: 9:30<br>
 <b>Место:</b> #220 кабинет</p>
 
-<button onclick="showMessage()">Нажми сюда</button>
+<button onclick="showMessage()">Нажми меня</button>
 
 <p id="msg"></p>
 </div>
 
 <script>
 function showMessage(){
-document.getElementById("msg").innerHTML =
-"Будем очень рады вас видет 💐 <br> Мы вас сильно любим";
+    document.getElementById("msg").innerHTML =
+    "Будем очень рады вас видет 💐 <br> Мы вас сильно любим! <br><br> 🎶 Послушайте эту песню: <br> <a class='song-link' href='https://youtu.be/bdGOGqkN6Po' target='_blank'>Jazzdauren - Дарите женщинам цветы</a>";
 }
 </script>
   
 </body>
 
 </html>
-
 
 
 
